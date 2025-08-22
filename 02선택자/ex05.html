@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 마우스가 닿을때 적용됨*/
+        .list > li > a:hover {background-color: red;}
+        /* 마우스를 클릭할 때 적용됨 */
+        .title:active {background-color: blue;}
+
+
+        .aaa:focus {border: 3px solid red; outline: none;}
+
+
+        .bbb {
+            appearance: none; /* input, select태그들의 기존디자인을 없애는 속성 */
+            border: 1px solid #777;
+            width: 10px;
+            height: 10px;
+        }
+
+        .bbb:checked {
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <ul class="list">
+        <li><a href="#">목록1</a></li>
+        <li><a href="#">목록1</a></li>
+        <li><a href="#">목록1</a></li>
+    </ul>
+
+    <p class="title">엑티브</p>
+
+    <input type="text" class="aaa">
+
+    <input type="checkbox" class="bbb">
+
+</body>
+</html>

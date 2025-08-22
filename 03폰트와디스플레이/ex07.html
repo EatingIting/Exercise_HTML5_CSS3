@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        #header > .logo {
+            background-color: black;
+            text-align: center;
+        }
+
+        #header > .logo > img {
+            width: 100px;
+        }
+
+        #header > .nav {
+            text-align: center;
+        }
+
+        #header .gnb > li {
+            display: inline-block; /* 가로배치하되, 크기지정할 수 있음 */
+        }
+        #header .gnb {
+            background-color: black;
+        }
+
+        #header .gnb > li > a {
+            display: block; /* 블럭성질(크기 지정됨)로 변경 */
+            width: 80px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            color: #fff;
+            text-decoration: none;
+
+            background-color: #222;
+            border-radius: 10px;
+        }
+        #header .gnb > li > a:hover {
+            background-color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <header id="header">
+        <div class="logo">
+            <img src="img/css3.png" alt="로고">
+        </div>
+        <div class="nav">
+            <ul class="gnb">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </div>
+    </header>
+
+</body>
+</html>

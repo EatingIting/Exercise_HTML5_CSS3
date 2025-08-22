@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {background-color: yellow; padding: 10px;}
+        .box .item { background-color: green; width: 50px; height: 50px; margin: 10px; }
+
+        .container {
+            display: inline-flex;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .container3 {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h3>flex vs inline-flex</h3>
+
+    <div class="container box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <div class="container box">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <hr>
+    
+    <h3>flex direction</h3>
+    <div class="container2 box">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+
+    <hr>
+    <h3>flex wrap(줄바꿈 여부)</h3>
+    <div class="container3 box">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+        <div class="item">item9</div>
+        <div class="item">item10</div>
+        <div class="item">item11</div>
+        <div class="item">item12</div>
+    </div>
+</body>
+</html>

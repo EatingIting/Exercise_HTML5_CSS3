@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0px; margin: 0px;}
+        ul, li {list-style: none;}
+
+        #header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            z-index: 5; /* 포지션이 겹칠때, z축의 순서를 지정. 숫자가 작을수록 밑으로 깔리고 클수록 위로 올라온다. ex) z-index: 10 = 위로 올라옴, z-index: 5 = 아래로 내려옴 */
+        }
+
+        .logo {
+            text-align: center;
+            padding:10px 0;
+        }
+    
+        .logo > img {
+            width: 100px;
+        }
+        .gnb > ul > li {
+            display: inline-block; /* 가로배치 하면서 크기가질 수 있음. 원래 li태그는 block속성. */
+        }
+
+        .gnb > ul > li > a {
+            display:block; /* 크기지정가능 */
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .gnb {
+            background-color: #000;
+            text-align: center;
+        }
+
+        .gnb > ul > li > a:hover {
+            background-color: #888;
+        }
+
+        #section {
+            height: 1000px;
+            background-color: aqua;
+            margin-top: 168px;
+        }
+
+        .action_btn {
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            z-index: 10;
+        }
+
+        .stick {
+            position: sticky;
+            left: 0;
+            top: 168px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="action_btn">TOP</div>
+    <header id="header">
+        <div class="logo">
+            <img src="../06플롯팅/img/css3.png" alt="로고">
+        </div>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section">
+        ........sdasdsa
+    </section>
+
+    <div class="stick">포지션sticky</div>
+
+    <!-- 
+        sticky는 스크롤을 따라다니다가 특정높이에서 position이 fixed되는 속성. 
+        1. top속성에 fixed되는 위치를 지정한다.
+        2. 부모속성에 overflow가 있으면 안됨.
+    -->
+
+    <section id="section" style="margin: 0;">
+        ........sdasdsa
+    </section>
+</body>
+</html>

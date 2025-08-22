@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+
+        .gnb > ul {
+            text-align: center;
+            background-color: black;
+        }
+
+        .gnb > ul > li {
+            display: inline-block;
+        }
+
+        .gnb > ul > li > a {
+            display: block;
+            width: 70px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+            color: #fff;
+            box-sizing: border-box;
+        }
+        .gnb > ul > li > a:hover {
+            border-bottom: 3px solid #fff;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .wrap > .content {
+            border: 1px solid #777;
+            padding: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <img src="img/1.jpg" alt="슬라이드1">
+    </article>
+
+    <section style="margin-top: 100px;">
+        <div class="wrap"><!-- 가운데 컨텐츠 상자 -->
+            <h3>제목 상자</h3>
+            <div class="content">
+                내용상자
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

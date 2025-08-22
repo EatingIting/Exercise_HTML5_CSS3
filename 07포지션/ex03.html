@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0px; margin: 0px;}
+        .box {
+            border: 1px solid #777;
+            width: 500px;
+            margin: 0 auto;
+            position: relative; /* absolute가 기준점으로 움직일 박스 */
+            padding: 10px;
+        }
+        .profile {
+            position: absolute;
+            top: 15px;
+            left: 15px; /* absolute를 주면 left right중 1개, top bottom중 1개를 꼭 줘야함! */
+            width: 50px;
+        }
+        .content {
+            padding-left: 70px;
+        }
+
+        .content > textarea {
+            width: 100%;
+            min-height: 150px; /* 최소 너비 150px. 컨텐츠가 더 차면 가변될 수 있음. max-height는 최대 너비 고정 */
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .control {
+            overflow: hidden;
+        }
+
+        .left {float: left;}
+        .left > input { display: block; }
+        .right {float: right;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../06플롯팅/img/css3.png" alt="프로필" class="profile">
+        <div class="content">
+            <textarea></textarea>
+            <div class="control">
+                <div class="left">
+                    <input type="text">
+                    <input type="text" style="margin-top: 5px;">
+                </div>
+                <button class="right">등록버튼</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
