@@ -17,7 +17,6 @@
 
 1. [HTML5 기초](#html5-기초)
 2. [CSS3 기초](#css3-기초)
-3. [예제 코드](#예제-코드)
 
 ---
 
@@ -25,7 +24,6 @@
 
 - HTML 문서 기본 구조
 - 시맨틱 태그 (`<header>`, `<nav>`, `<section>`, `<footer>` 등)
-- 멀티미디어 태그 (`<audio>`, `<video>`)
 - 폼 태그와 속성
 
 ---
@@ -34,5 +32,5 @@
 
 - 선택자 (태그, 클래스, 아이디)
 - 박스 모델 (margin, border, padding, content)
-- Flexbox 레이아웃
+- display속성, float속성 Flex 레이아웃
 - 색상, 글꼴, 배경 속성
